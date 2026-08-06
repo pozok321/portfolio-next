@@ -112,7 +112,7 @@ export default function Hero() {
           initial="hidden"
           animate={ready ? "show" : "hidden"}
           className="mt-20 grid max-w-2xl grid-cols-3 gap-6 border-t border-line pt-8 sm:mt-28"
-        >
+        > 
           {stats.map((stat) => (
             <div key={stat.label}>
               <p className="font-display text-3xl font-semibold text-ink sm:text-4xl">
