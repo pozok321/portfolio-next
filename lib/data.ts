@@ -7,16 +7,15 @@ export const profile = {
   location: "Tangerang, Indonesia",
   resumeUrl: "#",
   social: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    github: "https://github.com/pozok321",
+    linkedin: "https://www.linkedin.com/in/valeryan-ramadhan",
+    instagram: "https://www.instagram.com/valeryanramadhan",
   },
 };
 
 export const stats = [
-  { value: "3+", label: "Years of experience" },
-  { value: "24+", label: "Projects shipped" },
-  { value: "12K+", label: "Hours worked" },
+  { value: "4+", label: "Years of experience" },
+  { value: "10+", label: "Projects shipped" }
 ];
 
 export const navLinks = [
@@ -30,15 +29,11 @@ export const navLinks = [
 export const stack = [
   {
     category: "Frontend",
-    items: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
-  },
-  {
-    category: "Backend",
-    items: ["Node.js", "Express.js", "NestJS"],
+    items: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Vue.js", "Nuxt.js"],
   },
   {
     category: "Database",
-    items: ["PostgreSQL", "MongoDB", "Prisma"],
+    items: ["PostgreSQL"],
   },
   {
     category: "Tooling",
@@ -56,10 +51,10 @@ export const experience = [
   },
   {
     company: "Infolab Digital Solusi",
-    role: "QA & PM",
+    role: "QA & Project Manager",
     period: "February 2019 - March 2021",
     description:
-      "Testing and managing project development.",
+      "Testing and managing project development. Ensuring quality assurance and timely delivery of web applications.",
   }
 ];
 
@@ -68,7 +63,7 @@ export const projects = [
     slug: "Private Apps",
     index: "01",
     title: "Event Management Dashboard",
-    description: "A consumer investing dashboard with real-time charts and portfolio insights.",
+    description: "Dashboard for managing events, attendees, and analytics with real-time updates.",
     tags: ["Nuxt", "JavaScript", "Tailwind CSS, Axios"],
     color: "from-accent/40 via-accent/10 to-transparent",
   },
@@ -76,15 +71,15 @@ export const projects = [
     slug: "Self-Checkin Apps",
     index: "02",
     title: "Self Checkin",
-    description: "Headless storefront with instant search, filters, and localized checkout.",
+    description: "Self-service check-in system for events and conferences.",
     tags: ["Vue.js", "JavScript", "Bootstrap"],
     color: "from-mint/40 via-mint/10 to-transparent",
   },
   {
-    slug: "Landing Pages",
+    slug: "Landing Pages Undangin",
     index: "03",
     title: "Landing Page",
-    description: "AI-assisted resume review tool with actionable, section-by-section feedback.",
+    description: "Landing page for Undangin, a wedding invitation platform, showcasing features and user testimonials.",
     tags: ["Nuxt", "JavaScript", "Tailwind CSS, Axios"],
     color: "from-accent/40 via-mint/10 to-transparent",
   },
@@ -92,25 +87,17 @@ export const projects = [
     slug: "Wedding Invitation Website",
     index: "04",
     title: "Wedding Invitation",
-    description: "Drag-and-drop link-in-bio builder for developers, with live preview.",
+    description: "A customizable wedding invitation website with RSVP functionality and photo gallery.",
     tags: ["Vue.js", "Axios", "Tailwind"],
     color: "from-mint/40 via-mint/10 to-transparent",
   },
 
-    {
-    slug: "Portal Event Management",
-    index: "05",
-    title: "Portal Website",
-    description: "Drag-and-drop link-in-bio builder for developers, with live preview.",
-    tags: ["Vue.js", "Axios", "Tailwind"],
-    color: "from-mint/40 via-mint/10 to-transparent",
+  {
+  slug: "Portal Event Management",
+  index: "05",
+  title: "Portal Website",
+  description: "A portal website for event management, allowing users to browse events, register, and receive notifications.",
+  tags: ["Vue.js", "Axios", "Tailwind"],
+  color: "from-mint/40 via-mint/10 to-transparent",
   },
-  //   {
-  //   slug: "Calculator KPR",
-  //   index: "04",
-  //   title: "Calculator KPR",
-  //   description: "Real estate listing platform with map search and saved-property alerts.",
-  //   tags: ["Next.js", "Redux", "Tailwind CSS"],
-  //   color: "from-mint/40 via-accent/10 to-transparent",
-  // },
 ];

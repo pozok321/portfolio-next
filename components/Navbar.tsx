@@ -55,7 +55,7 @@ export default function Navbar() {
             href="#home"
             className="font-display text-sm font-semibold tracking-widest text-ink"
           >
-            RP<span className="text-accent">.</span>
+            VR<span className="text-accent">.</span>
           </a>
 
           <nav className="hidden items-center gap-1 md:flex">

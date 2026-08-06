@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, CircleDot } from "lucide-react";
 import ParticlesBackground from "./ParticlesBackground";
@@ -15,6 +16,25 @@ const fadeUp = {
 };
 
 export default function Hero() {
+  // Entrance plays the instant the Preloader finishes wiping away, instead of
+  // racing it on mount. Falls back to an immediate start if the loader has
+  // already fired (e.g. reduced-motion) or after a short timeout as a safety net.
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    if ((window as Window & { __appLoaded?: boolean }).__appLoaded) {
+      setReady(true);
+      return;
+    }
+    const onLoaded = () => setReady(true);
+    window.addEventListener("app:loaded", onLoaded);
+    const fallback = window.setTimeout(() => setReady(true), 3500);
+    return () => {
+      window.removeEventListener("app:loaded", onLoaded);
+      window.clearTimeout(fallback);
+    };
+  }, []);
+
   return (
     <section
       id="home"
@@ -30,7 +50,7 @@ export default function Hero() {
       <div className="container-wrap relative z-10">
         <motion.div
           initial="hidden"
-          animate="show"
+          animate={ready ? "show" : "hidden"}
           className="max-w-3xl"
         >
           <motion.div
@@ -90,7 +110,7 @@ export default function Hero() {
           custom={4}
           variants={fadeUp}
           initial="hidden"
-          animate="show"
+          animate={ready ? "show" : "hidden"}
           className="mt-20 grid max-w-2xl grid-cols-3 gap-6 border-t border-line pt-8 sm:mt-28"
         >
           {stats.map((stat) => (
