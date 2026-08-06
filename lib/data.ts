@@ -48,33 +48,19 @@ export const stack = [
 
 export const experience = [
   {
-    company: "Nebula Studio",
-    role: "Senior Frontend Engineer",
-    period: "Jan 2024 — Present",
-    description:
-      "Leading the frontend architecture for a suite of client products, mentoring two engineers, and setting the animation and design-system standards used company-wide.",
-  },
-  {
-    company: "Kalibrasi Tech",
-    role: "Frontend Developer",
-    period: "Aug 2022 — Dec 2023",
-    description:
-      "Built and maintained customer-facing dashboards in React and TypeScript, cutting median page load time by 38% through code-splitting and image pipeline work.",
-  },
-  {
-    company: "Studio Anagram",
+    company: "Infolab Digital Solusi",
     role: "Frontend Engineer",
-    period: "Feb 2021 — Jul 2022",
+    period: "Mei 2021 — Present",
     description:
-      "Translated Figma prototypes into pixel-accurate, responsive interfaces for early-stage startups across fintech and e-commerce.",
+      "Creating and maintaining web applications using modern frontend technologies, ensuring responsive design and optimal performance.",
   },
   {
-    company: "Freelance",
-    role: "Web Developer",
-    period: "2020 — 2021",
+    company: "Infolab Digital Solusi",
+    role: "QA & PM",
+    period: "February 2019 - March 2021",
     description:
-      "Delivered marketing sites and small web apps for local businesses, handling everything from scoping to deployment.",
-  },
+      "Testing and managing project development.",
+  }
 ];
 
 export const projects = [
@@ -103,16 +89,8 @@ export const projects = [
     color: "from-accent/40 via-mint/10 to-transparent",
   },
   {
-    slug: "Calculator KPR",
-    index: "04",
-    title: "Calculator KPR",
-    description: "Real estate listing platform with map search and saved-property alerts.",
-    tags: ["Next.js", "Redux", "Tailwind CSS"],
-    color: "from-mint/40 via-accent/10 to-transparent",
-  },
-  {
     slug: "Wedding Invitation Website",
-    index: "06",
+    index: "04",
     title: "Wedding Invitation",
     description: "Drag-and-drop link-in-bio builder for developers, with live preview.",
     tags: ["Vue.js", "Axios", "Tailwind"],
@@ -121,10 +99,18 @@ export const projects = [
 
     {
     slug: "Portal Event Management",
-    index: "06",
+    index: "05",
     title: "Portal Website",
     description: "Drag-and-drop link-in-bio builder for developers, with live preview.",
     tags: ["Vue.js", "Axios", "Tailwind"],
     color: "from-mint/40 via-mint/10 to-transparent",
   },
+  //   {
+  //   slug: "Calculator KPR",
+  //   index: "04",
+  //   title: "Calculator KPR",
+  //   description: "Real estate listing platform with map search and saved-property alerts.",
+  //   tags: ["Next.js", "Redux", "Tailwind CSS"],
+  //   color: "from-mint/40 via-accent/10 to-transparent",
+  // },
 ];
