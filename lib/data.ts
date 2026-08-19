@@ -26,18 +26,26 @@ export const navLinks = [
   { label: "Projects", href: "#projects" },
 ];
 
+export const projetLink = [
+  {  href: "https://labprivate.undangin.com/" },
+  {  href: "https://apievent1.undangin.com/" },
+  {  href: "https://undangin.com/" },
+  {  href: "#wedding-invitation-website" },
+  {  href: "https://portal.undangin.com/" },
+];
+
 export const stack = [
   {
     category: "Frontend",
-    items: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Vue.js", "Nuxt.js"],
+    items: ["JavaScript", "TypeScript", "React", "Tailwind CSS", "Vue.js", "Nuxt.js"],
   },
   {
-    category: "Database",
-    items: ["PostgreSQL"],
+    category: "Backend",
+    items: ["PostgreSQL, PHP, Laravel"],
   },
   {
     category: "Tooling",
-    items: ["Git", "Docker", "Figma", "Vercel"],
+    items: ["Git", "Figma", "Vercel", "Trello"],
   },
 ];
 
@@ -52,9 +60,17 @@ export const experience = [
   {
     company: "Infolab Digital Solusi",
     role: "QA & Project Manager",
-    period: "February 2019 - March 2021",
+    period: "January 2019 - March 2021",
     description:
       "Testing and managing project development. Ensuring quality assurance and timely delivery of web applications.",
+  },
+
+  {
+    company: "Infolab Digital Solusi",
+    role: "Internship Backend Developer",
+    period: "September 2018 - December 2018",
+    description:
+      "Creating Event Management Dashboard product for company and learning backend development.",
   }
 ];
 
@@ -66,14 +82,16 @@ export const projects = [
     description: "Dashboard for managing events, attendees, and analytics with real-time updates.",
     tags: ["Nuxt", "JavaScript", "Tailwind CSS, Axios"],
     color: "from-accent/40 via-accent/10 to-transparent",
+    link: projetLink[0].href,
   },
   {
     slug: "Self-Checkin Apps",
     index: "02",
     title: "Self Checkin",
     description: "Self-service check-in system for events and conferences.",
-    tags: ["Vue.js", "JavScript", "Bootstrap"],
+    tags: ["Vue 3", "JavScript", "Bootstrap"],
     color: "from-mint/40 via-mint/10 to-transparent",
+    link: projetLink[1].href,
   },
   {
     slug: "Landing Pages Undangin",
@@ -82,14 +100,16 @@ export const projects = [
     description: "Landing page for Undangin, a wedding invitation platform, showcasing features and user testimonials.",
     tags: ["Nuxt", "JavaScript", "Tailwind CSS, Axios"],
     color: "from-accent/40 via-mint/10 to-transparent",
+    link: projetLink[2].href,
   },
   {
     slug: "Wedding Invitation Website",
     index: "04",
     title: "Wedding Invitation",
     description: "A customizable wedding invitation website with RSVP functionality and photo gallery.",
-    tags: ["Vue.js", "Axios", "Tailwind"],
+    tags: ["Vue 3", "Axios", "Tailwind"],
     color: "from-mint/40 via-mint/10 to-transparent",
+    link: projetLink[3].href,
   },
 
   {
@@ -99,5 +119,6 @@ export const projects = [
   description: "A portal website for event management, allowing users to browse events, register, and receive notifications.",
   tags: ["Vue.js", "Axios", "Tailwind"],
   color: "from-mint/40 via-mint/10 to-transparent",
+  link: projetLink[4].href,
   },
 ];

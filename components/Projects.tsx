@@ -24,10 +24,16 @@ export default function Projects() {
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2">
-          {projects.map((project, i) => (
+          {projects.map((project, i) => {
+            const isExternal = project.link.startsWith("http");
+
+            return (
             <motion.a
               key={project.slug}
-              href={`#${project.slug}`}
+              href={project.link}
+              {...(isExternal
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
               initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
@@ -77,7 +83,8 @@ export default function Projects() {
                 </div>
               </div>
             </motion.a>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

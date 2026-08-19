@@ -4,13 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { profile } from "@/lib/data";
 
-/**
- * Intro loader:
- * 1. Name slides up letter-by-letter (masked reveal) while a counter ticks 000 -> 100.
- * 2. Name slides back out, then three panels wipe upward, staggered, revealing the page.
- * 3. Dispatches "app:loaded" on window so other components (e.g. Hero) can sync their
- *    own entrance animation to the exact moment the loader finishes.
- */
 export default function Preloader() {
   const nameWrapRef = useRef<HTMLDivElement>(null);
   const counterRef = useRef<HTMLSpanElement>(null);

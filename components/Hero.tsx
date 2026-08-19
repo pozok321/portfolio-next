@@ -16,9 +16,6 @@ const fadeUp = {
 };
 
 export default function Hero() {
-  // Entrance plays the instant the Preloader finishes wiping away, instead of
-  // racing it on mount. Falls back to an immediate start if the loader has
-  // already fired (e.g. reduced-motion) or after a short timeout as a safety net.
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
