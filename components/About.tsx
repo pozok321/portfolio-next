@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { profile } from "@/lib/data";
 
@@ -30,15 +31,13 @@ export default function About() {
           >
             <span className="eyebrow">This is me</span>
             <div className="relative mt-4 aspect-[4/5] w-full max-w-[260px] overflow-hidden rounded-3xl border border-line bg-surface">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/25 via-transparent to-mint/20" />
-              <div className="absolute inset-0 grid place-items-center">
-                <span className="font-display text-6xl font-semibold text-ink/15">
-                  {profile.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
-                </span>
-              </div>
+              <Image
+                src="/images/valeryanr-bgred.jpeg"
+                alt={`Foto ${profile.name} dengan latar belakang merah`}
+                fill
+                sizes="(min-width: 768px) 260px, 100vw"
+                className="object-cover"
+              />
             </div>
           </motion.div>
 
